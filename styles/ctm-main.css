@@ -1,0 +1,108 @@
+* {
+	font-family: sans-serif;
+}
+
+html {
+	background: url(../img/ctm_corner.png);
+	background-repeat: no-repeat;
+	background-size: 300px;
+	overflow: hidden;
+}
+
+crn_img {
+	background: url(../img/ctm_corner.png);
+	background-repeat: no-repeat;
+	background-size: 250px auto;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	z-index: -1;
+	width: 250px;
+	height: 450px;
+}
+
+td {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+	
+.header {
+	background: rgb(196,22,28);
+	background: linear-gradient(90deg, rgba(196,22,28,0.0046612394957983305) 175px, rgba(196,22,28,1) 75%);
+	width: 100%;
+	position: relative;
+	left: 300px;
+	top: -30px;
+	height: 200px;
+	z-index: 2;
+}
+
+.logo {
+	background: url(../img/ctm_logo.svg);
+	background-size: 290px auto;
+	background-repeat: no-repeat;
+	height: 160px;
+	position: relative;
+	top: -210px;
+	left: 600px;
+	z-index: 3;
+	
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	overflow: hidden;
+	width: 101%;
+	position: relative;
+	z-index: 5;
+	top: -200px;
+	left: -10px;
+}
+
+.navbar li {
+	float: left;
+	font-family: sans-serif;
+}
+
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	background-color: #111;
+}
+
+.active {
+	background-color: #c4161c;
+}
+
+.bottom-bar {
+	background-color: #333;
+	width: 95%;
+}
+
+.ctm_content {
+	background: white; 
+	padding: 30px;
+	position: relative;
+	top: -200px;
+	left: -10px;
+	width: 95%;
+	min-height: 500px;
+	z-index: 4;
+}
+.backup {
+	background: linear-gradient(90deg, rgba(196,22,28,1) 20%, rgba(196,22,28,0.0046612394957983305) 40%, rgba(196,22,28,0.0046612394957983305) 60%, rgba(196,22,28,1) 80%);
+
+}
