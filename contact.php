@@ -69,7 +69,7 @@ function validation() {
 </ul>
 </div>
 <div class="ctm_content">
-<form method=post action="handlers/contact.php" id="contactForm" onsubmit="sendEmail();">
+<form method=post action="contact.php" id="contactForm" onsubmit="sendEmail();">
 Name:<br>
 <input type=text id="name" name="name">
 
