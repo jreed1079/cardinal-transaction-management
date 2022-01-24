@@ -1,3 +1,22 @@
+<?php
+if($_POST["message"]) {
+	$to = "kiernan@cardinaltm.com";
+	$from = "webform@cardinaltm.com";
+	$subject = "A new submission was submitted";
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$emailBody = $_POST["message"];
+	$message = "Name: $name"."\r\n"."Email: $email"."\r\n"."Message: $emailBody";
+
+	$headers = "From: $from". "\r\n" .
+					 "Reply-To: $from" . "\r\n" .
+					 "X-Mailer: PHP/" . phpversion();
+					 
+	mail($to, $subject, $message, $headers);
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,8 +40,7 @@ function sendEmail() {
 	var formAgency = document.getElementById("agency").value;
 	var formEmail = document.getElementById("email").value;
 	var formMessage = document.getElementById("message").value;
-	
-	alert(formName + "\n" + formAgency + "\n" + formEmail + "\n" + formMessage);
+
 	return true;
 }
 
@@ -51,7 +69,7 @@ function validation() {
 </ul>
 </div>
 <div class="ctm_content">
-<form method=post action="" id="contactForm" onsubmit="sendEmail();">
+<form method=post action="handlers/contact.php" id="contactForm" onsubmit="sendEmail();">
 Name:<br>
 <input type=text id="name" name="name">
 
