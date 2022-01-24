@@ -1,0 +1,11 @@
+---
+deployment:
+    tasks:
+        - export DEPLOYPATH=/home/nlxnhgnyj062/public_html/
+        - /bin/cp contact.php $DEPLOYPATH
+        - /bin/cp about.html $DEPLOYPATH
+        - /bin/cp styles/ctm-main.css $DEPLOYPATH
+        - /bin/cp img/ctm_corner.png $DEPLOYPATH
+        - /bin/cp img/ctm_logo.svg $DEPLOYPATH
+        - /bin/cp img/favico.png $DEPLOYPATH
+        - /bin/cp img/logo-main.png $DEPLOYPATH
