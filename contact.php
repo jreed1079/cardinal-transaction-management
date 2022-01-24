@@ -84,6 +84,11 @@ Name:<br>
 
 <p><input type=submit></p>
 </form>
+<?php
+
+if($_POST["message"]) {
+	"<p>Thank you for your interest.  Your message has been sent and someone will get back to you shortly!</p>"
+}
 </div>
 <!-- <div class=bottom-bar>&nbsp;</div>
  --></body>
