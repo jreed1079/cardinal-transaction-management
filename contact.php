@@ -87,7 +87,7 @@ Name:<br>
 <?php
 
 if($_POST["message"]) {
-	"<p>Thank you for your interest.  Your message has been sent and someone will get back to you shortly!</p>"
+	echo "<p>Thank you for your interest.  Your message has been sent and someone will get back to you shortly!</p>";
 }
 ?>
 </div>
